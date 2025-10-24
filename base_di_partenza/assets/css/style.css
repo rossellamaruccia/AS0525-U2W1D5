@@ -1,7 +1,6 @@
 @media screen and (max-width: 1024px){
   body {
     width: 100%;
-    margin: 0 auto;
     font-family: "Roboto", sans-serif;
   }
 
@@ -103,6 +102,7 @@
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
+    justify-content: flex-start;
   }
 
   main section{
@@ -336,18 +336,23 @@ h4{
   }
 
   main{
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: flex-start;
-    align-items: flex-start;
+    display: block;
     width: 85%;
     margin: 1rem auto;
   }
 
+  main img{
+    vertical-align: middle;
+  }
+
+#trending{
+    display: inline-block;
+}
+
   main section{
     border-bottom: 1px solid lightgray;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 /* trending and discover more */
@@ -375,7 +380,6 @@ h4{
     display: grid;
     grid-template-columns: 1fr 6fr;
     margin-top: 1rem;
-    max-width: 33%;
   }
 
   main section div h2{
@@ -391,9 +395,12 @@ h4{
   }
 
   .sticky{
+    display: block;
     padding-bottom: 1rem;
-    flex-basis: 39%;
-    order: 0;
+    margin-left: 1rem;;
+    width: 39%;
+    float: right;
+    clear: both;
   }
 
   .sticky button{
@@ -408,6 +415,7 @@ h4{
   .sticky h3{
     margin-bottom: 1rem;
     margin-top: 2rem;
+
   }
 
   .sticky a {
@@ -435,10 +443,9 @@ h4{
   }
 
   article{
-    flex-basis: 59%;
+    width: 59%;
     display: flex;
     margin: 1em auto;
-    order: 0;
     overflow: hidden;
   }
 
