@@ -10,6 +10,8 @@
         color: black;
     }
 
+    /* navbar */
+
     nav{
         border-bottom: 2px solid black;
         display: flex;
@@ -52,5 +54,43 @@
 
     .button li{
         color: white;
+    }
+
+    /* hero */
+
+    header section{
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
+        padding-left: 1rem;
+    }
+
+    header section h1{
+        font-size: 3em;
+        font-family: 'Spectral', serif;
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        max-width: 45%;
+        /* da rivedere quando inserisco SVG  */
+    }
+
+    header section p{
+        font-size: 1.3em;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        max-width: 65%; 
+        /* da rivedere quando inserisco SVG  */       
+    }
+
+    header section button{
+        background-color: black;
+        border-radius: 30px;
+        color: white;
+        border: none;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;        
+        margin-left: 1rem;
     }
 }
