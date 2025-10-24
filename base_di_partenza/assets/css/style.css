@@ -445,8 +445,8 @@ h4{
   article{
     width: 59%;
     display: flex;
-    margin: 1em auto;
     overflow: hidden;
+    margin-top: 1rem;
   }
 
   .picture{
