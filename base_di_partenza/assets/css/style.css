@@ -191,10 +191,30 @@ h4{
     font-size: 0.8em;
   }
 
+  article{
+    display: flex;
+    margin: 1em auto;
+  }
+
+  .picture{
+    grid-row-end: span 4;
+    width: 40%;
+    height: auto;
+    margin-left: 1em;
+  }
+
+   article img{
+    vertical-align: middle;
+  }
+
   article h1{
     font-weight: bold;
     font-size: 1.5em;
     margin-top: 0.8em;
+  }
+
+  article h4{
+    display: inline;
   }
 
   article p{
@@ -210,4 +230,6 @@ h4{
     font-size: 0.6em;
     border-radius: 10px;
   }
+
+ 
 }
